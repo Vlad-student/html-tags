@@ -1,16 +1,22 @@
-.flex-container {
-    display: flex;
-    justify-content: space-between;
+body {
+    font-family: sans-serif;
 }
 
-p {
-    white-space: pre-wrap;
+
+#advertising {
+    border: 10px solid red;
+    font-size: 100px;
+    text-transform: uppercase;
 }
 
-.quotation::before {
-    content: '\201C';
+#news-articles {
+    counter-reset: articles_counter;
 }
 
-.quotation::after {
-    content: '\201D';
+.article-item {
+    counter-increment: article_counter;
+}
+
+.article-item > h3::before {
+    content: "Counter = " counter(article_counter) ". ";
 }
