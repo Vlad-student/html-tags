@@ -2,3 +2,15 @@
     display: flex;
     justify-content: space-between;
 }
+
+p {
+    white-space: pre-wrap;
+}
+
+.quotation::before {
+    content: '\201C';
+}
+
+.quotation::after {
+    content: '\201D';
+}
