@@ -21,6 +21,7 @@ body {
     content: "Counter = " counter(article_counter) ". ";
 }
 
+/*Fix hidden adding*/
 .hidden-heading {
     font-size: 0;
     width: 1;
